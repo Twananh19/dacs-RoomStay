@@ -34,6 +34,11 @@
     border-bottom: none;
 }
 
+.list_room img {
+  display: flex;
+  flex-basis: auto;
+}
+
     </style>
   </head>
   <body>
@@ -63,7 +68,7 @@
                     <td>{{$data -> price}}</td>
                     <td>{{$data -> wifi}}</td>
                     <td>{{$data -> room_type}}</td>
-                    <td><img src="room/{{$data->image}}" ></td>
+                    <td><img width="100" src="room/{{$data->image}}" ></td>
                     <td><a onclick="return confirm('Bạn có chắc muốn xóa không?');" class="btn btn-danger" href="{{url('room_delete', $data->id)}}">Delete</a></td>
                     <td><a class="btn btn-warning" href="{{url('room_update', $data->id)}}">Edit</a></td>
                 </tr>
