@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Room;
 use App\Models\Booking;
+use App\Models\Gallary;
 
 
 class HomeController extends Controller
@@ -20,9 +21,9 @@ class HomeController extends Controller
             {
                 $room= Room::all();
 
-        // $gallary = gallary::all();
+                $gallary = gallary::all();
 
-                return view('home.index',compact('room'));
+                return view('home.index',compact('room', 'gallary'));
 
             }
 
@@ -41,9 +42,9 @@ class HomeController extends Controller
     {
         $room= Room::all();
 
-        // $gallary = gallary::all();
+        $gallary = gallary::all();
 
-        return view('home.index',compact('room'));
+        return view('home.index',compact('room', 'gallary'));
     }
 
     public function room_details($id)

@@ -25,6 +25,11 @@
 
                 </i>Booking </a></li>
 
+                <li class="active">
+                  <a href="{{url('view_gallary')}}"> <i class="icon-home">
+
+                </i>Gallary </a></li>
+
                 
         </ul>
       </nav>
