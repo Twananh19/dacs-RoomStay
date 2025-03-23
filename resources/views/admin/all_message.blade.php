@@ -2,6 +2,7 @@
 <html>
   <head> 
     @include('admin.css')
+
     <style type="text/css">
      
      .table_deg {
@@ -45,9 +46,16 @@
     @include('admin.header')
     @include('admin.sidebar')
 
+
+
+
+
     <div class="page-content">
-      <div class="page-header">
-        <div class="container-fluid">
+        <div class="page-header">
+            <div class="container-fluid">
+
+
+
 
             <table class="table_deg">
                 <tr style="background-color: white;">
@@ -55,33 +63,35 @@
                     <th class="th_deg">Description</th>
                     <th class="th_deg">Price</th>
                     <th class="th_deg">Wifi</th>
-                    <th class="th_deg">Room Type</th>
-                    <th class="th_deg">Image</th>
-                    <th class="th_deg">Delete</th>
-                    <th class="th_deg">Update</th>
+                    
                 </tr>
 
+
                 @foreach($data as $data)
+                
                 <tr class="list_room">
-                    <td>{{$data -> room_title}}</td>
-                    <td>{!! Str::limit($data -> description, 50)!!}</td>
-                    <td>{{$data -> price}}</td>
-                    <td>{{$data -> wifi}}</td>
-                    <td>{{$data -> room_type}}</td>
-                    <td><img width="100" src="room/{{$data->image}}" ></td>
-                    <td><a onclick="return confirm('Bạn có chắc muốn xóa không?');" class="btn btn-danger" href="{{url('room_delete', $data->id)}}">Delete</a></td>
-                    <td><a class="btn btn-warning" href="{{url('room_update', $data->id)}}">Edit</a></td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->email}}</td>
+                    <td>{{$data->phone}}</td>
+                    <td>{{$data->message}}</td>
+                    
                 </tr>
+
                 @endforeach
+              
             </table>
 
 
 
 
-        
+
+            </div>
         </div>
-      </div>
     </div>
+
+
+
+
 
     @include('admin.footer')
   </body>

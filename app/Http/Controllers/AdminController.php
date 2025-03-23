@@ -8,6 +8,7 @@ use App\Models\Room;
 use App\Models\User;
 use App\Models\Booking;
 use App\Models\Gallary;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
@@ -144,5 +145,11 @@ class AdminController extends Controller
         $data->delete();
 
         return redirect()->back();
+    }
+
+    public function all_messages()
+    {
+        $data= Contact::all();
+        return view('admin.all_message', compact('data'));
     }
 }

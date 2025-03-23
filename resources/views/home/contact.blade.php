@@ -17,7 +17,7 @@
             </div>
             <div class="row">
                <div class="col-md-6">
-                  <form id="request" class="main_form" action="{{ url('contact') }}" method="post">
+                  <form id="request" class="main_form" action="{{ url('contact') }}" method="Post">
 
                   @csrf
                      <div class="row">

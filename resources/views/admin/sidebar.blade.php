@@ -30,6 +30,11 @@
 
                 </i>Gallary </a></li>
 
+                <li class="active">
+                  <a href="{{url('all_messages')}}"> <i class="icon-home">
+
+                </i>Messages </a></li>
+
                 
         </ul>
       </nav>
