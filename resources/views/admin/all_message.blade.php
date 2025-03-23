@@ -59,10 +59,11 @@
 
             <table class="table_deg">
                 <tr style="background-color: white;">
-                    <th class="th_deg" >Room Title</th>
-                    <th class="th_deg">Description</th>
-                    <th class="th_deg">Price</th>
-                    <th class="th_deg">Wifi</th>
+                    <th class="th_deg" >Name</th>
+                    <th class="th_deg">Email</th>
+                    <th class="th_deg">Phone Number</th>
+                    <th class="th_deg">Message</th>
+                    <th class="th_deg">Send Email</th>
                     
                 </tr>
 
@@ -74,6 +75,9 @@
                     <td>{{$data->email}}</td>
                     <td>{{$data->phone}}</td>
                     <td>{{$data->message}}</td>
+                    <td>
+                        <a class="btn btn-success" href="{{url('send_mail', $data->id)}}">Send mail</a>
+                    </td>
                     
                 </tr>
 
