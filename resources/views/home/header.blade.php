@@ -51,7 +51,7 @@
 
                         @if (Route::has('register'))
                         <li class="nav-item">
-                                 <a class="btn btn-primary" href="{{ url('register') }}">Register</a>
+                                 <a class="btn btn-primary" href="{{ url('login') }}">Register</a>
                               </li>
                         @endif
                     @endauth
