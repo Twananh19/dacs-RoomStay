@@ -56,6 +56,13 @@ php artisan serve
 ```
 Sau đó truy cập `http://127.0.0.1:8000/`
 
+## Biểu đồ database
+![Class diagram](image/hotel_booking_database.png)
+
+## Biểu đồ database
+![usecase diagram](image/hotel_booking_usecase.png)
+
+
 ## 📸 Ảnh giao diện
 Dưới đây là một số hình ảnh về giao diện của hệ thống:
 
@@ -82,6 +89,9 @@ Dưới đây là một số hình ảnh về giao diện của hệ thống:
 
 ### 🔧 Trang quản trị đặt phòng
 ![Trang quản trị booking](image/booking_list.png)
+
+### 🔧 Trang quản trị phản hồi
+![Trang quản trị phản hồi](image/mail_list.png)
 
 
 ## 🔚 Tổng kết
